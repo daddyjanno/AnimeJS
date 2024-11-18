@@ -1,11 +1,39 @@
-body {
-  margin: 0;
-  padding: 0;
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.circle {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: red;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f1f1;
+    overflow-x: hidden;
 }
+
+.container {
+    text-align: center;
+    perspective: 1000px;
+}
+h1 {
+    font-family: Playfair Display;
+    transform-style: preserve-3d;
+    display: inline-flex;
+    margin-top: 200px;
+    color: #333;
+    font-weight: 100;
+    letter-spacing: 10px;
+    font-size: 190px;
+    cursor: pointer;
+}
+h1 span {
+    pointer-events: none;
+}
+
+/* .circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+} */
